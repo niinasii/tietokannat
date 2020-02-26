@@ -1,4 +1,5 @@
 // client
+require('dotenv').config()
 const salasana = process.env.PGPASSWORD;
 const pguser = process.env.PGUSER;
 
