@@ -1,8 +1,11 @@
 // client
+const salasana = process.env.PGPASSWORD;
+const pguser = process.env.PGUSER;
+
 const Client = require('pg').Client;
 const conopts = {
-    user: 'nodeclient', //postgresin tietokannan käyttäjätunnus
-    password: 'Witcher3390',
+    user: pguser,
+    password: salasana,
     host: 'localhost', //tietokantapalvelin
     database: 'world' //tietokanta
 }
